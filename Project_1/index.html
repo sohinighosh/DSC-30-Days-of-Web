@@ -3,60 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>Sohini Ghosh</title>
+    <link rel="stylesheet" href="/DSC-30-Days-of-Web/Project_2/styles.css">
   </head>
   <body>
       <div>
           <h1>My Portfolio</h1>
           <p>Hi, My name is Sohini and I am a web designer.</p>
-          <img src="img.jpg" alt="img">
-          <iframe width="420" height="315"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe> 
-          <header>
-              <h2>My Hobbies</h2>
-              <p>Painting</p>
-              <p>Coding</p>
-          </header>
+          <img class="img" src="img.jpg" alt="img">
+          <hr>
+        
+         <header>
+              <h2>My Skills</h2>
+              <div class="skill-row">
+              <p  class="programming">I am a Web Developer</p>
+              <img src="programming.png" alt="img">
+            </div>
+            <div class="skill-row">
+              <p class="content" >And I love to write!</p>
+              <img src="content2.png" alt="img">
+            </div>
+              <div class="skill-row">
+              <p class="paint">Painting is my leisure time activity</p>
+              <img  src="paint.png" alt="img">
+            </div>
+        </header>
+
+         
       </div>
+      <hr>
       <div>
-          <h2>Contact Me:</h2>
-
-          <!-- form -->
-
-          <form action="mailto:mymail@mail.com" method="post" enctype="text/plain">
-            <label>Your first name</label>
-            <input type="text" name="yourName" value="">
-            <br>
-            <label>Your last name</label>
-            <input type="text" name="yourName" value="">
-            <br>
-            <label>Your number</label>
-            <input type="number" name="yourNumber" value="">
-            <br>
-            <label>Your email</label>
-            <input type="email" name="yourEmail" value="">  <br />
-            <label>Your Message:</label><br>
-            <textarea name="yourMessage" rows="10" cols="30"></textarea>
-            <br>
-            <input type="submit" name="">
-      
-          </form>
+        <footer>
+            <h3><u>My Work Experience:</u></h3>
+            <table align="center">
+              <tr>
+                <th>Year</th>
+                <th>Work Experience</th>
+              </tr>
+              <tr>
+                <td>2020-now</td>
+                <td>Content Writer at MSAC</td>
+              </tr>
+              <tr>
+                <td>2020-present</td>
+                <td>Web Developer</td>
+              </tr>
+              </table>
+          </footer>
+         
       </div>
-      <footer>
-      <h3><u>My Work Experience:</u></h3>
-      <table>
-        <tr>
-          <th>Year</th>
-          <th>Work Experience</th>
-        </tr>
-        <tr>
-          <td>2020-now</td>
-          <td>Content Writer at MSAC</td>
-        </tr>
-        <tr>
-          <td>2020-present</td>
-          <td>Web Developer</td>
-        </tr>
-        </table>
-    </footer>
+      <hr class="hr">
+      <h2>Contact Me:</h2>
+
+      <!-- form -->
+
+      <form action="mailto:mymail@mail.com" method="post" enctype="text/plain">
+        <div class="form">
+        <label >Your first name</label>
+        <input type="text" name="yourName" value="">
+    </div>
+        <br>
+        <div class="form">
+        <label>Your last name</label>
+        <input type="text" name="yourName" value="">
+    </div>
+        <br>
+        <div class="form">
+        <label >Your number</label>
+        <input type="number" name="yourNumber" value="">
+    </div>
+        <br>
+        <div class="form">
+        <label>Your email</label>
+        <input type="email" name="yourEmail" value="">  
+    </div>
+        <br />
+        <div class="form">
+        <label >Your Message:</label><br>
+        <textarea name="yourMessage" rows="10" cols="30"></textarea>
+        <br>
+    </div>
+        <input id="btn" type="submit" name="">
+  
+      </form>
   </body>
